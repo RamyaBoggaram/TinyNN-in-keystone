@@ -4,11 +4,14 @@ These are the steps to build TinyNN in keystone which is non docker but having d
 ```
 cd keystone/sdk/examples/hello/eapp
 ```
-Paste the TinyNN.c code here
+Paste the TinyNN.c code in the hello/eapp
+```
+cd ..
+```
+Change the CMakeLists.txt with CMakeLists.txt provided within the repo into hello directory 
 # 2. Making the package
 ```
-cd ../../../..
-cd build
+cd ../../../build
 make hello-package
 cp examples/hello/hello.ke ./overlay/root
 make image
